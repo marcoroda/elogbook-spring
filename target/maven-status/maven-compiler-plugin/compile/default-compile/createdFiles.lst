@@ -1,0 +1,6 @@
+bootsample/dao/TaskRepository.class
+bootsample/model/Task.class
+bootsample/Application.class
+bootsample/controller/SampleRestController.class
+bootsample/controller/MainController.class
+bootsample/service/TaskService.class
