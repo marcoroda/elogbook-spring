@@ -21,6 +21,11 @@ public class MainController {
 	@Autowired
 	private TaskService taskService;
 
+	@GetMapping("/login")
+	public String login(){
+		return "login";
+	}
+	
 	@GetMapping("/")
 	public String home(HttpServletRequest request){
 		request.setAttribute("mode", "MODE_HOME");
