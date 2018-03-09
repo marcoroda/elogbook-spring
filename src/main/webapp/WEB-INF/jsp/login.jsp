@@ -13,9 +13,16 @@
 
 <c:url value="/css/style.css" var="jstlCss" />
 <link href="${jstlCss}" rel="stylesheet" />
-<link href="static/css/bootstrap.min.css" rel="stylesheet">
-<script src="static/js/jquery-1.11.1.min.js"></script>
-<script src="static/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap -->
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
 <!------ Include the above in your HEAD tag ---------->
 
 
@@ -76,6 +83,16 @@
 
 		</div>
 	</footer>
+
+	<!-- Latest compiled and minified jQuery -->
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified Bootstrap JavaScript for plugins-->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
 
 </body>
 </html>

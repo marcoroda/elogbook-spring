@@ -1,6 +1,6 @@
-/home/mroda/Downloads/bootsample/src/main/java/bootsample/Application.java
-/home/mroda/Downloads/bootsample/src/main/java/bootsample/controller/SampleRestController.java
-/home/mroda/Downloads/bootsample/src/main/java/bootsample/service/TaskService.java
-/home/mroda/Downloads/bootsample/src/main/java/bootsample/dao/TaskRepository.java
-/home/mroda/Downloads/bootsample/src/main/java/bootsample/controller/MainController.java
-/home/mroda/Downloads/bootsample/src/main/java/bootsample/model/Task.java
+/home/mroda/CERN/git-repos/elogbook-spring/src/main/java/bootsample/service/TaskService.java
+/home/mroda/CERN/git-repos/elogbook-spring/src/main/java/bootsample/controller/SampleRestController.java
+/home/mroda/CERN/git-repos/elogbook-spring/src/main/java/bootsample/dao/TaskRepository.java
+/home/mroda/CERN/git-repos/elogbook-spring/src/main/java/bootsample/controller/MainController.java
+/home/mroda/CERN/git-repos/elogbook-spring/src/main/java/bootsample/model/Task.java
+/home/mroda/CERN/git-repos/elogbook-spring/src/main/java/bootsample/Application.java
