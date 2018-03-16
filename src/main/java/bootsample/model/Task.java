@@ -10,24 +10,26 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity(name="t_tasks")
+@Entity(name="elogs")
 public class Task implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
-	private String name;
+	private String summary;
 	private String description;
+	private String creator;
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date dateCreated;
 	private boolean finished;
 	
 	public Task(){}
 	
-	public Task(String name, String description, Date dateCreated, boolean finished) {
+	public Task(String summary, String description, String creator, Date dateCreated, boolean finished) {
 		super();
-		this.name = name;
+		this.summary = summary;
 		this.description = description;
+		this.creator = creator;
 		this.dateCreated = dateCreated;
 		this.finished = finished;
 	}
@@ -38,17 +40,23 @@ public class Task implements Serializable {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getsummary() {
+		return summary;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setSummary(String summary) {
+		this.summary = summary;
 	}
 	public String getDescription() {
 		return description;
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	public String getCreator() {
+		return creator;
+	}
+	public void setCreator(String creator) {
+		this.creator = creator;
 	}
 	public Date getDateCreated() {
 		return dateCreated;
@@ -65,7 +73,7 @@ public class Task implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Task [id=" + id + ", name=" + name + ", description=" + description + ", dateCreated=" + dateCreated
+		return "Task [id=" + id + ", summary=" + summary + ", description=" + description + ", creator=" + creator + ", dateCreated=" + dateCreated
 				+ ", finished=" + finished + "]";
 	}	
 	
