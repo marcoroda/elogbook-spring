@@ -29,20 +29,20 @@ public class MainController {
 	@GetMapping("/")
 	public String home(HttpServletRequest request){
 		request.setAttribute("mode", "MODE_HOME");
-		return "index";
+		return "home";
 	}
 	
 	@GetMapping("/all-tasks")
 	public String allTasks(HttpServletRequest request){
 		request.setAttribute("tasks", taskService.findAll());
 		request.setAttribute("mode", "MODE_TASKS");
-		return "index";
+		return "home";
 	}
 	
 	@GetMapping("/new-task")
 	public String newTask(HttpServletRequest request){
 		request.setAttribute("mode", "MODE_NEW");
-		return "index";
+		return "home";
 	}
 	
 	@PostMapping("/save-task")
@@ -51,14 +51,14 @@ public class MainController {
 		taskService.save(task);
 		request.setAttribute("tasks", taskService.findAll());
 		request.setAttribute("mode", "MODE_TASKS");
-		return "index";
+		return "home";
 	}
 	
 	@GetMapping("/update-task")
 	public String updateTask(@RequestParam int id, HttpServletRequest request){
 		request.setAttribute("task", taskService.findTask(id));
 		request.setAttribute("mode", "MODE_UPDATE");
-		return "index";
+		return "home";
 	}
 	
 	@GetMapping("/delete-task")
@@ -66,7 +66,7 @@ public class MainController {
 		taskService.delete(id);
 		request.setAttribute("tasks", taskService.findAll());
 		request.setAttribute("mode", "MODE_TASKS");
-		return "index";
+		return "home";
 	}
 	
 //	@GetMapping("/done-task")
