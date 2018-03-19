@@ -1,5 +1,6 @@
 package bootsample.controller;
 
+
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
@@ -10,6 +11,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import bootsample.model.Task;
@@ -21,12 +24,12 @@ public class MainController {
 	@Autowired
 	private TaskService taskService;
 
-	@GetMapping("/login")
+	@RequestMapping(value={"/", "/login"}, method = RequestMethod.GET)
 	public String login(){
 		return "login";
 	}
 	
-	@GetMapping("/")
+	@GetMapping("/home")
 	public String home(HttpServletRequest request){
 		request.setAttribute("mode", "MODE_HOME");
 		return "home";

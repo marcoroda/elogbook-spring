@@ -52,7 +52,7 @@
 						<span class="input-group-addon"> <i
 							class="glyphicon glyphicon-user" style="width: auto"></i>
 						</span> <input id="txtUsuario" runat="server" type="text"
-							class="form-control" name="user" placeholder="Usuário"
+							class="form-control" name="user" placeholder="elogbook username"
 							required="" />
 					</div>
 				</div>
@@ -61,7 +61,7 @@
 						<span class="input-group-addon"> <i
 							class="glyphicon glyphicon-lock" style="width: auto"></i>
 						</span> <input id="txtSenha" runat="server" type="password"
-							class="form-control" name="password" placeholder="Senha"
+							class="form-control" name="password" placeholder="password"
 							required="" />
 					</div>
 				</div>

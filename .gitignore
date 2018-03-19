@@ -26,3 +26,7 @@ hs_err_pid*
 .cxl.mti_se.version
 .cxl.questasim.version
 
+.classpath
+.project
+.settings/
+target/
